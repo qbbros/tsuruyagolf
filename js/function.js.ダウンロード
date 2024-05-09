@@ -1,0 +1,12 @@
+// フローティングバナー
+$(window).on('load',function () {
+	if (window.navigator.userAgent.indexOf('dpointApp') != -1) {
+		$('footer').removeClass('flbnpb');
+		$('#load_back_button_poinko').addClass('flbnpb');
+		$('#load_back_button_simple').addClass('flbnpb');
+	} else {
+		$('footer').addClass('flbnpb');
+		$('#load_back_button_poinko').removeClass('flbnpb');
+		$('#load_back_button_simple').removeClass('flbnpb');
+	}
+});
